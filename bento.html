@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bento Style Web Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .box {
+      padding: 20px;
+      border-radius: 4px;
+      background-color: #e9e9e9;
+    }
+
+    /* Style each box differently (you can add more styles as needed) */
+    .box:nth-child(odd) {
+      background-color: #d3d3d3;
+    }
+    .box:nth-child(3n) {
+      background-color: #b0e0e6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+    <div class="box">Box 4</div>
+    <div class="box">Box 5</div>
+    <div class="box">Box 6</div>
+    <!-- Add more boxes as needed -->
+  </div>
+</body>
+</html>
