@@ -1,17 +1,10 @@
-<!-- App.svelte -->
 <script>
-  import Navbar from './Navbar.svelte';
-  import Header from './Header.svelte';
-  import PortfolioSection from './PortfolioSection.svelte';
+  import { Router, Route } from 'svelte-routing';
+  import Main from './Main.svelte';
+  import Portfolio from './Portfolio.svelte';
 </script>
 
-<main>
-  <Navbar />
-  <Header />
-  <PortfolioSection />
-</main>
-
-<style>
-  /* Global Picocss styles or styles for the main layout */
-
-</style>
+<Router>
+  <Route path="/" component={Main} />
+  <Route path="/portfolio" component={Portfolio} />
+</Router>
