@@ -1,5 +1,5 @@
 <!-- Navbar.svelte -->
-<script>
+  <script>
     // Your TypeScript code here
   </script>
   
